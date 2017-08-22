@@ -22,18 +22,18 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:Image ID="papaBobImage" runat="server" ImageUrl="c:\users\p076240\documents\visual studio 2017\Projects\DevUCSharpChallengeFirstPapaBobsWebsite\DevUCSharpChallengeFirstPapaBobsWebsite\Images\PapaBob.png" />
+            <asp:Image ID="papaBobImage" runat="server" ImageUrl="~\Images\PapaBob.png" Height="200px" />
             <asp:Label ID="papaBobLabel" runat="server" Font-Bold="True" Font-Names="Arial" Font-Size="XX-Large" Text="Papa Bob's Pizza and Software"></asp:Label>
             <br />
         </div>
-        <asp:RadioButton ID="smallCrustRadioButton" runat="server" Text="Baby Bob Size (10&quot;) - $10" />
+        <asp:RadioButton ID="smallCrustRadioButton" runat="server" Checked="True" Text="Baby Bob Size (10&quot;) - $10" />
         <br />
         <asp:RadioButton ID="mediumCrustRadioButton" runat="server" Text="Mama Bob Size (13&quot;) - $13" />
         <br />
         <asp:RadioButton ID="largeCrustRadioButton" runat="server" Text="Papa Bob Size (16&quot;) - $16" />
         <br />
         <br />
-        <asp:RadioButton ID="thinCrustRadioButton" runat="server" Text="Thin Crust" />
+        <asp:RadioButton ID="thinCrustRadioButton" runat="server" Checked="True" Text="Thin Crust" />
         <br />
         <asp:RadioButton ID="deepDishCrustRadioButton" runat="server" Text="Deep Dish (+$2)" />
         <br />
@@ -52,7 +52,7 @@
         <span class="auto-style2"><strong>Papa Bob&#39;s </strong></span><span class="auto-style1"><span class="auto-style3"><strong>Special Deal</strong></span></span><p>
             Save $2.00 when you add Pepperoni, Green Peppers and Anchovies OR Pepperoni, Red Peppers, and Onions to your pizza!!</p>
         <p>
-            <asp:Button ID="purchaseButton" runat="server" Text="Purchase" />
+            <asp:Button ID="purchaseButton" runat="server" OnClick="purchaseButton_Click" Text="Purchase" />
         </p>
         <asp:Label ID="totalLabel" runat="server"></asp:Label>
         <br />

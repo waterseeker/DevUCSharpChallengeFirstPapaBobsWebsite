@@ -11,6 +11,12 @@ namespace DevUCSharpChallengeFirstPapaBobsWebsite
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            double total = 0.00;
+            totalLabel.Text = "Total: $0.00";
+        }
+
+        protected void purchaseButton_Click(object sender, EventArgs e)
+        {
 
         }
     }
