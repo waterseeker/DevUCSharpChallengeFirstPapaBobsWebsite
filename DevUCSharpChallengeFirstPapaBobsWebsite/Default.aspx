@@ -26,11 +26,11 @@
             <asp:Label ID="papaBobLabel" runat="server" Font-Bold="True" Font-Names="Arial" Font-Size="XX-Large" Text="Papa Bob's Pizza and Software"></asp:Label>
             <br />
         </div>
-        <asp:RadioButton ID="smallCrustRadioButton" runat="server" Checked="True" Text="Baby Bob Size (10&quot;) - $10" />
+        <asp:RadioButton ID="smallCrustRadioButton" runat="server" Checked="True" Text="Baby Bob Size (10&quot;) - $10" GroupName="CrustsGroup" />
         <br />
-        <asp:RadioButton ID="mediumCrustRadioButton" runat="server" Text="Mama Bob Size (13&quot;) - $13" />
+        <asp:RadioButton ID="mediumCrustRadioButton" runat="server" Text="Mama Bob Size (13&quot;) - $13" GroupName="CrustsGroup" />
         <br />
-        <asp:RadioButton ID="largeCrustRadioButton" runat="server" Text="Papa Bob Size (16&quot;) - $16" />
+        <asp:RadioButton ID="largeCrustRadioButton" runat="server" Text="Papa Bob Size (16&quot;) - $16" GroupName="CrustsGroup" />
         <br />
         <br />
         <asp:RadioButton ID="thinCrustRadioButton" runat="server" Checked="True" Text="Thin Crust" />

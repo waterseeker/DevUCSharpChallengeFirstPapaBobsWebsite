@@ -11,13 +11,27 @@ namespace DevUCSharpChallengeFirstPapaBobsWebsite
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            double total = 0.00;
+            
             totalLabel.Text = "Total: $0.00";
         }
 
         protected void purchaseButton_Click(object sender, EventArgs e)
         {
+            double total = 0.00;
+            if (smallCrustRadioButton.Checked)
+            {
+                total += 10;
+            }
+            else if (mediumCrustRadioButton.Checked)
+            {
+                total += 13;
+            }
+            else
+            {
+                total += 16;
+            }
 
+            totalLabel.Text = "Total: $" + total;
         }
     }
 }
