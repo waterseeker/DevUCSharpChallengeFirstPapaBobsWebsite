@@ -31,6 +31,23 @@ namespace DevUCSharpChallengeFirstPapaBobsWebsite
                 total += 16;
             }
 
+            if (deepDishCrustRadioButton.Checked)
+            {
+                total += 2;
+            }
+
+            if (pepperoniCheckBox.Checked) { total += 1.5; }
+            if (onionsCheckBox.Checked) { total += .75; }
+            if (greenPeppersCheckBox.Checked) { total += .5; }
+            if (redPeppersCheckBox.Checked) { total += .75; }
+            if (anchoviesCheckBox.Checked) { total += 2; }
+
+            if ((pepperoniCheckBox.Checked && greenPeppersCheckBox.Checked && anchoviesCheckBox.Checked) 
+                || (pepperoniCheckBox.Checked && redPeppersCheckBox.Checked && onionsCheckBox.Checked))
+            {
+                total -= 2;
+            }
+
             totalLabel.Text = "Total: $" + total;
         }
     }

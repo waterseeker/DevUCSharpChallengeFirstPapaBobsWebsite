@@ -26,16 +26,16 @@
             <asp:Label ID="papaBobLabel" runat="server" Font-Bold="True" Font-Names="Arial" Font-Size="XX-Large" Text="Papa Bob's Pizza and Software"></asp:Label>
             <br />
         </div>
-        <asp:RadioButton ID="smallCrustRadioButton" runat="server" Checked="True" Text="Baby Bob Size (10&quot;) - $10" GroupName="CrustsGroup" />
+        <asp:RadioButton ID="smallCrustRadioButton" runat="server" Checked="True" Text="Baby Bob Size (10&quot;) - $10" GroupName="CrustSizeGroup" />
         <br />
-        <asp:RadioButton ID="mediumCrustRadioButton" runat="server" Text="Mama Bob Size (13&quot;) - $13" GroupName="CrustsGroup" />
+        <asp:RadioButton ID="mediumCrustRadioButton" runat="server" Text="Mama Bob Size (13&quot;) - $13" GroupName="CrustSizeGroup" />
         <br />
-        <asp:RadioButton ID="largeCrustRadioButton" runat="server" Text="Papa Bob Size (16&quot;) - $16" GroupName="CrustsGroup" />
+        <asp:RadioButton ID="largeCrustRadioButton" runat="server" Text="Papa Bob Size (16&quot;) - $16" GroupName="CrustSizeGroup" />
         <br />
         <br />
-        <asp:RadioButton ID="thinCrustRadioButton" runat="server" Checked="True" Text="Thin Crust" />
+        <asp:RadioButton ID="thinCrustRadioButton" runat="server" Checked="True" Text="Thin Crust" GroupName="CrustTypeGroup" />
         <br />
-        <asp:RadioButton ID="deepDishCrustRadioButton" runat="server" Text="Deep Dish (+$2)" />
+        <asp:RadioButton ID="deepDishCrustRadioButton" runat="server" Text="Deep Dish (+$2)" GroupName="CrustTypeGroup" />
         <br />
         <br />
         <asp:CheckBox ID="pepperoniCheckBox" runat="server" Text="Pepperoni (+$1.50)" />
